@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather Bank</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    
+    <header>
+        <img class="img" src="logo1.jpg" alt="Logo of Feather Bank" width="60px" height="40px">
+        <h1 class="name">Feather Bank</h1>
+        <div class="link"> <a class="a" href="login.html">Home</a></div>
+    </header>
+    
+    <section>
+        <div class="form">
+            <h1>Reset Password</h1>
+            <form onsubmit="return validate()" action="resetpassword" method="post">
+                <label>New Password :</label>
+                <input type="text" name="npwd" id="npwd"><span id="id1"></span><br><br>
+
+                <label>Conform Password :</label>
+                <input type="password" name="cpwd" id="cpwd"><span id="number1"></span><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form><br>
+        </div>
+    </section>
+    <script src="reset.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feather Bank - Home</title>
+<link rel="stylesheet" type="text/css" href="cards.css">
+</head>
+<body>
+
+	<header>
+        <img class="img" src="logo1.jpg" alt="Logo of Feather Bank" width="60px" height="40px">
+        <h1 class="name">Feather Bank</h1>
+        <div class="link"> <img src="login.png" alt="Img" width="15px" height="15px"> <a class="a" href="login.html">SignOut</a></div>
+    </header>
+    <nav>
+        <br>
+        <a href="LoginHome.jsp">Home</a>
+        <a href="statement">View Statement</a>
+        <a href="moneyTransfer.html" >Money Transfer</a>
+        <a href="recharge.html" >Recharge</a>
+        <a href="cards.html" >Cards</a>
+        <a href="loans.html" >Loans</a>
+    </nav>
+    <section>
+
+        <h1>Card Manager : Block Card</h1>
+        <div style="color: green;">Your Card has been successfully blocked.</div><br>
+        <form onsubmit="return validate()" action="blockCard" method="post">
+            <label>Card Type :</label>
+            <select name="card" id="card">
+                <option style="display: none;" value=""></option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+            </select><span id="msg1"></span><br><br>
+
+            <label>Reason :</label>
+            <select name="reason" id="reason">
+                <option style="display: none;" value=""></option>
+                <option value="Credit Card">Lost Card</option>
+                <option value="Other">Other</option>
+            </select><span id="msg2"></span><br><br>
+
+            <label>Password :</label>
+            <input type="password" name="pwd" id="pwd"><span id="msg3"></span><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </section>
+    
+</body>
+<script src="cards.js"></script>
+</html>

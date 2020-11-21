@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather Bank</title>
+    <link rel="stylesheet" href="forgotpass.css">
+</head>
+<body>
+    
+    <header>
+        <img class="img" src="logo1.jpg" alt="Logo of Feather Bank" width="60px" height="40px">
+        <h1 class="name">Feather Bank</h1>
+        <div class="link"> <a class="a" href="login.html">Home</a></div>
+    </header>
+    
+    <section>
+        <div class="form">
+            <h1>Reset Password</h1>
+            <form onsubmit="return validate()" action="forgotpassword" method="post">
+                <label>User ID :</label>
+                <input type="text" name="id" id="id"><span id="id1"></span><br><br>
+
+                <label>Mobile number :</label>
+                <input type="number" name="number" id="number"><span id="number1"></span><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form><br>
+        </div>
+    </section>
+    <script src="forgotpass.js"></script>
+</body>
+</html>

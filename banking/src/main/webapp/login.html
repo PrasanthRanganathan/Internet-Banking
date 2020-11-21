@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather Bank - LogIn</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <img class="img" src="logo1.jpg" alt="Logo of Feather Bank" width="60px" height="40px">
+        <h1 class="name">Feather Bank</h1>
+        <div class="link"> <a class="a" href="login.html">Home</a></div>
+    </header>
+    
+    <section>
+        <div class="form"><br>
+            <h1>NetBanking LogIn</h1>
+            <form onsubmit="return validate()" action="login" method="post">
+                <label>User ID :</label>
+                <input type="text" name="id" id="id"><span id="id1" style="font-size: 17px;"></span><br><br>
+
+                <label>Password :</label>
+                <input type="password" name="pass" id="pass"><span id="pass1" style="font-size: 17px;"></span><br><br>
+
+                <button type="submit" class="btn">SignIn</button>
+            </form><br>
+            <a href="Forgotpass.html" style="color: white;">Forgot Password</a>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feather Bank - Home</title>
+<link rel="stylesheet" type="text/css" href="moneyTransfer.css">
+</head>
+<body>
+
+	<header>
+        <img class="img" src="logo1.jpg" alt="Logo of Feather Bank" width="60px" height="40px">
+        <h1 class="name">Feather Bank</h1>
+        <div class="link"> <img src="login.png" alt="Img" width="15px" height="15px"> <a class="a" href="login.html">SignOut</a></div>
+    </header>
+    <nav>
+        <br>
+        <a href="LoginHome.jsp">Home</a>
+        <a href="statement">View Statement</a>
+        <a href="moneyTransfer.html" >Money Transfer</a>
+        <a href="recharge.html" >Recharge</a>
+        <a href="cards.html" >Cards</a>
+        <a href="loans.html" >Loans</a>
+        
+    </nav>
+    <section>
+
+        <h1>Money Transfer</h1>
+        <form onsubmit="return validate()" action="moneyTransfer" method="post">
+            <label>Payer Account number :</label>
+            <input type="number" name="saccno" id="saccno"><span id="msg1"></span><br><br>
+
+            <label>Payee Account number :</label>
+            <input type="number" name="accno" id="accno"><span id="msg2"></span><br><br>
+
+            <label>Conform Account number :</label>
+            <input type="password" name="caccno" id="caccno"><span id="msg3"></span><br><br>
+
+            <label>Payee Name :</label>
+            <input type="text" name="name" id="name"><span id="msg4"></span><br><br>
+
+            <label>Amount :</label>
+            <input type="number" name="amt" id="amt"><span id="msg5"></span><br><br>
+
+            <label>Payment Mode :</label>
+            <select name="mode" id="mode">
+                <option style="display: none;" value=""></option>
+                <option value="NEFT" name="neft">NEFT</option>
+                <option value="IMPS" name="imps">IMPS</option>
+            </select><span id="msg6"></span><br><br>
+
+            <label>Remarks :</label>
+            <input type="text" name="remark" id="remark"><br><br>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </section>
+    
+</body>
+<script src="moneyTransfer.js"></script>
+</html>
